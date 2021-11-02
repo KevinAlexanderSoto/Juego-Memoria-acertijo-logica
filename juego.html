@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Memoria</title>
+    
+</head>
+<body>
+    <header class="container-fluid bg-dark">
+       
+        <nav class="navbar navbar-light bg-dark container-xl">
+            <h1 class="text-center m-4 text-warning ">Los Juegos Mentales</h1>
+            <form class="container-xl justify-content-end">
+                <a class="btn btn-outline-warning" href="./index.html" > <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                  </svg> Atrás </i></a>
+              
+            </form>
+          </nav>
+
+    </header>
+
+    <div class="alert alert-success d-flex align-items-center fade" id= "alerta"role="alert" >
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </symbol>
+          </svg>
+          
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+
+        Felicitaciones , puedes darle al Boton Seguir.
+        <button type="button" class="btn-close mx-2" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    <section class="container-xl my-5 my-sm-5">
+        <div class="row m-3">
+            <div class="col-3">
+               <img class = "img-fluid" id ="img1"src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1635813474/carta_oqaqm2.png" alt="misteriosa">
+            </div>
+            <div class="col-3">
+                <img class = "img-fluid" id ="img2" src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1635813474/carta_oqaqm2.png" alt="misteriosa1">
+             </div>
+             <div class="col-3">
+                <img class = "img-fluid" id ="img3" src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1635813474/carta_oqaqm2.png" alt="misteriosa2">
+             </div>
+             <div class="col-3">
+                <img class = "img-fluid" id ="img4"src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1635813474/carta_oqaqm2.png" alt="misteriosa3">
+             </div>
+
+        </div>
+
+        <div class="row m-3">
+            <div class="col-3">
+                <img class = "img-fluid" id ="img5" src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1635813474/carta_oqaqm2.png" alt="misteriosa4">
+             </div>
+             <div class="col-3">
+                <img class = "img-fluid" id ="img6" src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1635813474/carta_oqaqm2.png" alt="misteriosa5">
+             </div>
+             <div class="col-3">
+                <img class = "img-fluid" id ="img7" src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1635813474/carta_oqaqm2.png" alt="misteriosa6">
+             </div>
+             <div class="col-3">
+                <img class = "img-fluid" id ="img8" src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1635813474/carta_oqaqm2.png" alt="misteriosa7">
+             </div>
+            
+        </div>
+        
+
+    </section>
+    
+    <section class="container-xl d-flex justify-content-center ">
+        <button id = "Seguir"class="btn btn-success my-3" type="button" onclick="location.href = './juego2.html'" disabled> Seguir <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+          </svg></button>
+    </section>
+
+
+    <!-- <footer >
+        <div class="footer-bottom m-4">
+            <p class="text-white text-center">Made Whit <i class="bi bi-suit-heart-fill"></i> by Kevin</p>
+        </div>
+    </footer> -->
+   
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
