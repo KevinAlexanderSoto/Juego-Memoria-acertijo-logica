@@ -9,7 +9,12 @@ const Alerta = document.querySelector('#alerta');
 const parra = document.querySelector('#parra');
 
 const formulario = document.querySelector("#formulario");
-
+window.addEventListener('DOMContentLoaded',(event)=>{
+ // Mostrar el toast
+ const toastEl = document.querySelector('#toast');
+ const toast = new bootstrap.Toast( toastEl );
+ toast.show();
+});
 formulario.addEventListener('submit',(ev)=>{
     ev.preventDefault();
 const Check1 = ev.target[0].checked;
@@ -45,7 +50,7 @@ Alerta.className = "alert alert-success d-flex align-items-center show";
 parra.textContent = "Muy bien , Pasemos al juego final";
 
     setTimeout(()=>{
-        location.href = "./palabra.html"
+        location.href = "./juego3.html"
     },3000);
 
 })
