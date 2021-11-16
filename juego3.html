@@ -34,7 +34,7 @@
                           </div>
           
                           <div class="modal-body">
-                             <p class="fs-4 px-2 text-wrap"> En hora buena, has desbloqueado un grupo nuevo de letras. <span class="fw-bold">[ o ? m e i u ] </span>
+                             <p class="fs-4 px-2 text-wrap"> En hora buena, has desbloqueado el segundo grupo de letras. <span class="fw-bold">[ o ? m e i u ] </span>
                              </p>
                           </div>
           
@@ -50,9 +50,42 @@
           </nav>
     
     </header>
+<!-- Notificacion  -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10;">
+    <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"><!-- aria es para accesibilidad -->
+        <div class="toast-header">
+            <strong class="me-auto">Nuevo Mensaje...</strong>
+            <small>Hace 0 minutos</small>
+            <button type="button" data-bs-dismiss="toast" aria-label="Cerrar Notificacion" class="btn-close"></button>
+        </div>
+        <div class="toast-body">
+            Tienes <span class="fw-bold">nuevas </span> Letras.
+        </div>
+    </div>
+</div>
 
+<div class="container-xl mt-3 ">
+    <div class="row">
+        <div class="col-md-3 col-6 ">
+            <img src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1637030516/relog/Plantilla-Relog1_shd9a2.png" alt="relog1" class="img-fluid m-1">
+        </div>
+        <div class="col-md-3 col-6">
+            <img src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1637030523/relog/Plantilla-Relog2_ospz2c.png" alt="relog2" class="img-fluid m-1">
+        </div>
+        <div class="col-md-3 col-6">
+            <img src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1637030796/relog/Plantilla-Relog3_lakzyw.png" alt="relog3" class="img-fluid m-1">
+        </div>
+        <div class="col-md-3 col-6">
+            <img src="https://res.cloudinary.com/drx0n5wmw/image/upload/v1637030804/relog/Plantilla-Relog_gycbgq.jpg" alt="relog4" class="img-fluid m-1">
+        </div>
+    </div>
+</div>
+<div class="container-xl d-flex align-items-center my-4">
+    <p class="text-center">¿Cual sera la hora que marcara el cuarto relog?</p>
+    <br>
+</div>
+<button class="btn btn-success ">Enviar</button>
 
-    
 
 
     <script src="./js/juego3.js"></script>
