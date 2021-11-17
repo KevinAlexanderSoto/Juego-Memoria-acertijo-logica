@@ -14,6 +14,9 @@ window.addEventListener('DOMContentLoaded',(event)=>{
  const toastEl = document.querySelector('#toast');
  const toast = new bootstrap.Toast( toastEl );
  toast.show();
+    // guardar las letras para ser vistas desde otra 
+    localStorage.setItem('grupo1',' Q s n e i r');
+    
 });
 formulario.addEventListener('submit',(ev)=>{
     ev.preventDefault();
