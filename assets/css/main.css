@@ -1,4 +1,4 @@
-footer {
+/* footer {
     background: #111;
     color: #fff;
     width: 100%;
@@ -9,8 +9,14 @@ footer {
     align-self: flex-end;
     position: fixed;
   bottom: 0;
-  }
+  } */
 
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #111;
+    color: #fff;
+  }
   .foo{
     background: #111;
     color: #fff;
@@ -23,3 +29,14 @@ footer {
     position: fixed;
   bottom: 0;
   }
+
+ /*  p,
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        } */

@@ -4,7 +4,6 @@ const grupo1 = localStorage.getItem('grupo1');
 const grupo2 = localStorage.getItem('grupo2');
 const grupo3 = localStorage.getItem('grupo3');
 
-console.log(grupo1,grupo2);
 
 if(grupo1 != null){
 
