@@ -23,6 +23,6 @@ window.addEventListener('DOMContentLoaded',(event)=>{
       Mbody.textContent = "Has ganado , pasemos a descifrar la frace final. Ya tienes toda las letras";
 
       setTimeout(()=>{
-         window.location.replace("/palabra.html");
+        location.href="/palabra.html";
       },4000);
    }) 

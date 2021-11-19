@@ -8,7 +8,7 @@ console.log(grupo1,grupo2);
 
 if(grupo1 != null){
 
-    p.textContent = 'Letras descubiertas : ' + grupo1 ;
+    p.textContent = '' + grupo1 ;
 };
 
 if(grupo2!=null){
