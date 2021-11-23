@@ -31,15 +31,15 @@
     height: 5px;
   }
 
-  /* body, html {
+  body, html {
     overflow-y: hidden;
     overflow-x: hidden;
 
-    background: black;
-  } */
+    /* background: black; */
+  }
 
-  /* #fondo {
+  #fondo {
     position: absolute;
       bottom: -100px;
       opacity: .4;
-  } */
+  }

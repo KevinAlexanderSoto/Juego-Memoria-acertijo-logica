@@ -101,12 +101,12 @@ letras();
 var gravedad = .5;
 var numHijos = 10;
 
-var numParticulas = 20;
+var numParticulas = 6;
 var particulasCreadas = 0;
 
 function crearParticula() {
 	var particula = document.createElement("div");
-	particula.className="particula col-sm-12";
+	particula.className="particula ";
 
 	var y = window.innerHeight;
 	var x = Math.random() * window.innerWidth;
@@ -114,7 +114,7 @@ function crearParticula() {
 	particula.style.top = y + "px";
 	particula.style.left = x + "px";
 
-	var velocidadY = -15 - (Math.random() * 15);
+	var velocidadY = -10 - (Math.random() * 10);
 
 	particula.setAttribute("data-velocidad-y", velocidadY);
 	particula.setAttribute("data-velocidad-x", "0");
@@ -127,7 +127,7 @@ function crearParticula() {
 	particulasCreadas++;
 
 	if (particulasCreadas < numParticulas) {
-	    setTimeout(crearParticula, 50 + (Math.random() * 150));
+	    setTimeout(crearParticula, 50 + (Math.random() * 100));
 	}
 }
 
@@ -145,7 +145,7 @@ function update() {
 
 		particula.setAttribute("data-velocidad-y", velocidadY);
 
-		var top = particula.style.top ? particula.style.top : "0"; //10px
+		var top = particula.style.top ? particula.style.top : "10"; //10px
 		top = parseFloat(top.replace("px", ""));
 		top += velocidadY;
 		particula.style.top = top + "px";
@@ -153,6 +153,9 @@ function update() {
 		var velocidadX = parseFloat(particula.getAttribute("data-velocidad-x"));
 
 		var left = particula.style.left ? particula.style.left : "0";
+        if (left > window.innerWidth) {
+            left = window.innerWidth-10;
+        }
 		left = parseFloat(left.replace("px", ""));
 		left += velocidadX;
 		particula.style.left = left + "px";
