@@ -74,7 +74,9 @@ let cont = 0;
         ev.preventDefault(); 
         const input = l3.value
         if (input.length == 2) {
-            l3.value = l3.value.toLowerCase();
+
+            input = l3.value.toLowerCase();
+
          if (input === "mi" && cont3 !=1) {
              l3.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
@@ -99,15 +101,15 @@ let cont = 0;
         ev.preventDefault(); 
         const input = l4.value
         if (input.length == 6) {
-            l4.value = l4.value.toLowerCase();
+
+            input = l4.value.toLowerCase();
 
          if (input == "novia?" && cont4 !=1 ) {
              l4.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
              cont4=1; 
 
-             
-
+            
              if (ganados >= 4) {
                 localStorage.clear();
                 start();
@@ -129,7 +131,7 @@ letras();
 var gravedad = .5;
 var numHijos = 12;
 
-var numParticulas = 6;
+var numParticulas = 7;
 var particulasCreadas = 0;
 
 function crearParticula() {
