@@ -33,20 +33,35 @@ const letras = ()=>{
         if (l1.value == "Quieres" && cont !=1) {
             l1.className = "input border border-success fs-2 border-3 rounded-1"; 
             ganados++;
-            cont=1;   
+            cont=1;  
+            if (ganados >= 4) {
+                localStorage.clear();
+                start();
+
+	            update();
+            } 
         }
           
        }
     });
-
+    let cont4 = 0;
     l2.addEventListener('keyup',(ev)=>{
         ev.preventDefault(); 
         if (l2.value.length == 3) {
-            let cont = 0;
-         if (l2.value == "ser" && cont !=1) {
+            
+            l2.value.toLowerCase();
+
+         if (l2.value == "ser" && cont4 !=1) {
              l2.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
-             cont=1; 
+             cont4=1; 
+
+             if (ganados >= 4) {
+                localStorage.clear();
+                start();
+
+	            update();
+            }
             }
            
         }
@@ -56,12 +71,19 @@ const letras = ()=>{
         ev.preventDefault(); 
         const input = l3.value
         if (input.length == 2) {
-            
+            l3.value.toLowerCase();
          if (input === "mi" && cont3 !=1) {
              l3.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
              cont3=1; 
              console.log(ganados)
+
+             if (ganados >= 4) {
+                localStorage.clear();
+                start();
+
+	            update();
+            }
             }
            
         }
@@ -73,7 +95,7 @@ const letras = ()=>{
         ev.preventDefault(); 
         const input = l4.value
         if (input.length == 6) {
-            
+            l4.value.toLowerCase();
          if (input == "novia?" && cont4 !=1 ) {
              l4.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
@@ -85,7 +107,7 @@ const letras = ()=>{
                 localStorage.clear();
                 start();
 
-	update();
+	            update();
             }
 
             }
@@ -99,7 +121,7 @@ letras();
 ///////////pirogtenia//////////////
 
 var gravedad = .5;
-var numHijos = 10;
+var numHijos = 12;
 
 var numParticulas = 6;
 var particulasCreadas = 0;
@@ -154,7 +176,7 @@ function update() {
 
 		var left = particula.style.left ? particula.style.left : "0";
         if (left > window.innerWidth) {
-            left = window.innerWidth-10;
+            left = window.innerWidth-90;
         }
 		left = parseFloat(left.replace("px", ""));
 		left += velocidadX;
@@ -169,6 +191,7 @@ function update() {
 		if (top > window.innerHeight) {
 			particula.remove();
 		}
+        
 	}
 
 	setTimeout(update, 20);
