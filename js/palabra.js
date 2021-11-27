@@ -72,7 +72,7 @@ let cont = 0;
      let cont3 = 0;
      l3.addEventListener('keyup',(ev)=>{
         ev.preventDefault(); 
-        const input = l3.value
+        let input = l3.value
         if (input.length == 2) {
 
             input = l3.value.toLowerCase();
@@ -99,7 +99,7 @@ let cont = 0;
      
      l4.addEventListener('keyup',(ev)=>{
         ev.preventDefault(); 
-        const input = l4.value
+        let input = l4.value
         if (input.length == 6) {
 
             input = l4.value.toLowerCase();
