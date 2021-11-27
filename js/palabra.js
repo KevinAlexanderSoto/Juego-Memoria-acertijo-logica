@@ -76,7 +76,7 @@ let cont = 0;
         if (input.length == 2) {
 
             input = l3.value.toLowerCase();
-
+            l3.value =  input 
          if (input === "mi" && cont3 !=1) {
              l3.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
@@ -103,7 +103,7 @@ let cont = 0;
         if (input.length == 6) {
 
             input = l4.value.toLowerCase();
-
+            l4.value = input
          if (input == "novia?" && cont4 !=1 ) {
              l4.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
