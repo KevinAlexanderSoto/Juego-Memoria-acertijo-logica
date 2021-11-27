@@ -1,0 +1,1 @@
+(()=>{const t=document.querySelector("#letras"),e=localStorage.getItem("grupo1"),o=localStorage.getItem("grupo2"),n=localStorage.getItem("grupo3");null!=e&&(t.textContent=""+e),null!=o&&(t.textContent=t.textContent+o),null!=n&&(t.textContent=t.textContent+" "+n)})();
