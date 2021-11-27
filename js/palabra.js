@@ -8,6 +8,7 @@ const l1 = document.querySelector("#l1");
 const l2 = document.querySelector("#l2");
 const l3 = document.querySelector("#l3");
 const l4 = document.querySelector("#l4");
+const Alerta = document.querySelector("#alerta");
 
 let ganados=0;
 const letras = ()=>{
@@ -26,41 +27,43 @@ const letras = ()=>{
         };
 
 }
-
+let cont = 0;
     l1.addEventListener('keyup',(ev)=>{
        if (l1.value.length == 7) {
-        let cont = 0;
+        
         if (l1.value == "Quieres" && cont !=1) {
             l1.className = "input border border-success fs-2 border-3 rounded-1"; 
             ganados++;
             cont=1;  
             if (ganados >= 4) {
                 localStorage.clear();
-                start();
 
+                start();
 	            update();
+                Alerta.className = "alert alert-success alert-dismissible fs-5";
             } 
         }
           
        }
     });
-    let cont4 = 0;
+    let cont2 = 0;
     l2.addEventListener('keyup',(ev)=>{
         ev.preventDefault(); 
         if (l2.value.length == 3) {
             
-            l2.value.toLowerCase();
+            l2.value = l2.value.toLowerCase();
 
-         if (l2.value == "ser" && cont4 !=1) {
+         if (l2.value == "ser" && cont2 !=1) {
              l2.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
-             cont4=1; 
+             cont2=1; 
 
              if (ganados >= 4) {
                 localStorage.clear();
                 start();
 
 	            update();
+                Alerta.className = "alert alert-success alert-dismissible fs-5";
             }
             }
            
@@ -71,18 +74,19 @@ const letras = ()=>{
         ev.preventDefault(); 
         const input = l3.value
         if (input.length == 2) {
-            l3.value.toLowerCase();
+            l3.value = l3.value.toLowerCase();
          if (input === "mi" && cont3 !=1) {
              l3.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
              cont3=1; 
-             console.log(ganados)
+            
 
              if (ganados >= 4) {
                 localStorage.clear();
                 start();
 
 	            update();
+                Alerta.className = "alert alert-success alert-dismissible fs-5";
             }
             }
            
@@ -95,19 +99,21 @@ const letras = ()=>{
         ev.preventDefault(); 
         const input = l4.value
         if (input.length == 6) {
-            l4.value.toLowerCase();
+            l4.value = l4.value.toLowerCase();
+
          if (input == "novia?" && cont4 !=1 ) {
              l4.className = "input border border-success fs-2 border-3 rounded-1"    
              ganados++;
              cont4=1; 
 
-             console.log(ganados);
+             
 
              if (ganados >= 4) {
                 localStorage.clear();
                 start();
 
 	            update();
+                Alerta.className = "alert alert-success alert-dismissible fs-5";
             }
 
             }
