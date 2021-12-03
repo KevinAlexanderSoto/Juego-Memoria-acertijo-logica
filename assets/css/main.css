@@ -39,3 +39,31 @@
           font-family: 'Playfair Display', serif;
           font-family: 'Raleway', sans-serif;
         }
+
+ .rotar{
+  animation: vuelta 3s;
+ 
+ } 
+ .rotary{
+  animation: vueltay 3s;
+ 
+ } 
+
+ @keyframes vuelta {
+   20%,90%{
+    /* transform: rotate3d(1, 2.0, 3.0, 10deg); */
+    transform: rotateX(180deg);
+   }
+   0%,100%{
+    transform: rotateX(0deg);
+   }
+ }
+ @keyframes vueltay {
+   20%,90%{
+     transform: rotatey(180deg);
+   }
+   0%,100%{
+    transform: rotatey(0deg);
+   }
+ }
+ 
